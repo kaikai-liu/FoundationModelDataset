@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p docs metadata)",
+      "Bash(mv \"Foundation Model Strategy - Mineral Exploration.md\" docs/)",
+      "Bash(mv \"Subsurface Dataset Research Brief.md\" docs/)",
+      "Bash(mv \"SeisDARE Evaluation - Sotiel-Elvira.md\" docs/)",
+      "Bash(mv \"SeisDARE Dataset Shortlist.md\" docs/)",
+      "Bash(rm das_visualize.py inspect_iberseis_ni.py inspect_seisdare_geometry.py inspect_seisdare_segy.py make_seisdare_summary_slide.py)",
+      "Bash(rmdir flowrate:*)",
+      "Bash(.venv/Scripts/python -c ':*)",
+      "Bash(.venv/bin/python -c ':*)",
+      "Bash(uv venv:*)",
+      "Bash(uv sync:*)",
+      "Bash(.venv/bin/python -c \"import ast; ast.parse\\(open\\('scripts/inspect_iberseis_wa_segy.py'\\).read\\(\\)\\); print\\('segy: OK'\\)\")",
+      "Bash(.venv/bin/python -c \"import ast; ast.parse\\(open\\('scripts/inspect_iberseis_wa_geometry.py'\\).read\\(\\)\\); print\\('geometry: OK'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import ast; ast.parse\\(open\\('scripts/inspect_iberseis_wa_segy.py'\\).read\\(\\)\\); print\\('segy: OK'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import ast; ast.parse\\(open\\('scripts/inspect_iberseis_wa_geometry.py'\\).read\\(\\)\\); print\\('geometry: OK'\\)\")",
+      "Bash(.venv/Scripts/python.exe scripts/inspect_iberseis_wa_segy.py)",
+      "Bash(.venv/Scripts/python.exe scripts/inspect_iberseis_wa_geometry.py)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:digital.csic.es)",
+      "Bash(curl -L -o \"IBERSEIS-WA-Geo.asc\" \"https://digital.csic.es/bitstream/10261/193986/4/IBERSEIS-WA-Geo.asc\")",
+      "Bash(curl -L -o \"IBERSEIS-WA.sgy\" \"https://digital.csic.es/bitstream/10261/193986/3/IBERSEIS-WA.sgy\")",
+      "Bash(curl -L -C - -o \"IBERSEIS-WA.sgy\" \"https://digital.csic.es/bitstream/10261/193986/3/IBERSEIS-WA.sgy\")",
+      "Bash(rm IBERSEIS-WA.sgy)",
+      "Bash(curl -L --retry 3 --retry-delay 5 -o \"IBERSEIS-WA.sgy\" \"https://digital.csic.es/bitstream/10261/193986/3/IBERSEIS-WA.sgy\")",
+      "Bash(rm -f IBERSEIS-WA.sgy)",
+      "Bash(wget --timeout=120 --tries=5 --waitretry=10 -O \"IBERSEIS-WA.sgy\" \"https://digital.csic.es/bitstream/10261/193986/3/IBERSEIS-WA.sgy\")",
+      "Bash(powershell.exe -Command \"\\(New-Object System.Net.WebClient\\).DownloadFile\\('https://digital.csic.es/bitstream/10261/193986/3/IBERSEIS-WA.sgy', 'IBERSEIS-WA.sgy'\\)\")",
+      "Bash(mv 'C:/Users/lkk12/Documents/code/FoundationModelDataSet/das_viz_outputs/*' C:/Users/lkk12/Documents/code/FoundationModelDataSet/datasets/das/outputs/)",
+      "Bash(mv 'C:/Users/lkk12/Documents/code/FoundationModelDataSet/metadata/*' C:/Users/lkk12/Documents/code/FoundationModelDataSet/datasets/seisdare/sotiel/raw/)",
+      "Bash(mv 'C:/Users/lkk12/Documents/code/FoundationModelDataSet/seisdare_preview/*.png' C:/Users/lkk12/Documents/code/FoundationModelDataSet/datasets/seisdare/sotiel/outputs/)",
+      "Bash(mv 'C:/Users/lkk12/Documents/code/FoundationModelDataSet/seisdare_geometry_preview/*.png' C:/Users/lkk12/Documents/code/FoundationModelDataSet/datasets/seisdare/sotiel/outputs/)",
+      "Bash(mv 'C:/Users/lkk12/Documents/code/FoundationModelDataSet/iberseis_preview/*' C:/Users/lkk12/Documents/code/FoundationModelDataSet/datasets/seisdare/iberseis/ni_outputs/)",
+      "Bash(bash /c/Users/lkk12/.claude/statusline-command.sh)"
+    ]
+  }
+}

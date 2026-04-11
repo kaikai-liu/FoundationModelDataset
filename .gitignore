@@ -1,0 +1,28 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Large binary data files — track metadata/scripts only, not raw data
+datasets/**/*.sgy
+datasets/**/*.zip
+datasets/**/*.csv
+datasets/das/raw/DAS_extracted/
+
+# Excel geometry/metadata — small enough to keep if desired; remove lines below to track them
+# datasets/**/*.xls
+# datasets/**/*.xlsx
+
+# Output images — reproducible from scripts, large in aggregate
+datasets/**/outputs/
+datasets/**/*_outputs/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

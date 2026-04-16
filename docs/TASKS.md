@@ -63,7 +63,9 @@
 - [x] Inspect structure (deposit types, elements, sample counts)
 - [x] Visualize deposit-type distributions
 - [x] Write README (`datasets/cmio/outputs/` + `docs/datasets/CMiO Evaluation.md`)
-- [ ] Prototype experiment (e.g. deposit-environment classification or CMiO × CMMI point fusion)
+- [x] Baseline classifier — Deposit_Environment from log10 geochemistry, one-best-method-per-element features (`scripts/cmio_baseline_classifier.py`, 68.7% test accuracy / 0.59 macro F1 on stratified 20% split, 7 classes, 67 elements, `datasets/cmio/outputs/README_baseline.md`)
+- [ ] Spatial/deposit-grouped split + pathfinder ratio features (next iteration)
+- [ ] CMiO × CMMI point fusion (sample CMMI rasters at CMiO lat/lon)
 
 ---
 

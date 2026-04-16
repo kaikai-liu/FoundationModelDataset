@@ -49,20 +49,21 @@
 ---
 
 ## Phase 2 — CMMI (critical mineral prospectivity)
-- [ ] Download CMMI data package (USGS)
-- [ ] Inspect raster layers (modalities, resolution, spatial coverage)
-- [ ] Visualize key layers
-- [ ] Write README
+- [-] Download CMMI data package (USGS) — US-Canada geophysics + faults done (8 of 14 ScienceBase items; 6 deposit/prospectivity/geochemistry items deferred, hit HTTP 522)
+- [x] Inspect raster layers (modalities, resolution, spatial coverage)
+- [x] Visualize key layers
+- [x] Write README (`datasets/cmmi/outputs/` + `docs/datasets/CMMI Evaluation - US-Canada Subset.md`)
+- [ ] Retry missing ScienceBase items (Zn-Pb deposits, prospectivity models, black-shale geochemistry, Australia magnetic, geology shapefiles)
 - [ ] Prototype experiment (e.g. prospectivity regression or anomaly ranking)
 
 ---
 
 ## Phase 3 — CMiO (ore-system geochemistry)
-- [ ] Download CMiO database (USGS)
-- [ ] Inspect structure (deposit types, elements, sample counts)
-- [ ] Visualize deposit-type distributions
-- [ ] Write README
-- [ ] Prototype experiment (e.g. deposit-type classification from geochemistry)
+- [x] Download CMiO database (USGS) — rock geochemistry release, DOI 10.5066/P14WGQ8V (~1.7 MB, 1,295 samples × 307 columns)
+- [x] Inspect structure (deposit types, elements, sample counts)
+- [x] Visualize deposit-type distributions
+- [x] Write README (`datasets/cmio/outputs/` + `docs/datasets/CMiO Evaluation.md`)
+- [ ] Prototype experiment (e.g. deposit-environment classification or CMiO × CMMI point fusion)
 
 ---
 
